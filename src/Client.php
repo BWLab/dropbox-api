@@ -52,7 +52,7 @@ class Client
     {
         $this->accessToken = $accessToken;
 
-        $this->client = $client ?? new GuzzleClient(['handler' => GuzzleFactory::handler()]);
+        $this->client = $client ?? new GuzzleClient();
 
         $this->maxChunkSize = ($maxChunkSize < self::MAX_CHUNK_SIZE ? ($maxChunkSize > 1 ? $maxChunkSize : 1) : self::MAX_CHUNK_SIZE);
         $this->maxUploadChunkRetries = $maxUploadChunkRetries;
