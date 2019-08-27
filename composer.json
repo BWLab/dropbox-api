@@ -25,7 +25,6 @@
         }
     ],
     "require": {
-        "php": "^7.1",
         "graham-campbell/guzzle-factory": "^3.0",
         "guzzlehttp/guzzle": "^5.0"
     },
